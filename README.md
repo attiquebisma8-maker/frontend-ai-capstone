@@ -11,6 +11,6 @@ This repository contains my work for the FlyRank Frontend AI Engineering Interns
 
 ## Author
 Bisma Attique
-##PROJECT STATUS 
+##  PROJECT STATUS 
 
 Environment setup completed successfully

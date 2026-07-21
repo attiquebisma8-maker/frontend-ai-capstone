@@ -27,11 +27,5 @@ Then open the URL shown in the terminal (usually http://localhost:5173).
 
 ## Project Status
 
-Environment setup completed successfully.
-
-## Author
-Bisma Attique
-##  Project Status
-
 Environment setup completed successfully
 

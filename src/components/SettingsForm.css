@@ -55,6 +55,11 @@
   color: var(--text-h);
 }
 
+.settings__required {
+  font-weight: 400;
+  color: var(--text);
+}
+
 .settings__input,
 .settings__select,
 .settings__textarea {

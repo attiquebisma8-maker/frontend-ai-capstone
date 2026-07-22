@@ -6,9 +6,7 @@ export const initialFormValues = {
   email: '',
   username: '',
   bio: '',
-  theme: 'system',
-  emailNotifications: true,
-  newPassword: '',
+  password: '',
   confirmPassword: '',
 }
 
@@ -41,18 +39,14 @@ export function validateField(name, value, values = initialFormValues) {
       if (value.length > 160) return 'Bio must be 160 characters or less'
       return ''
     }
-    case 'theme':
-      if (!['light', 'dark', 'system'].includes(value)) return 'Select a valid theme'
-      return ''
-    case 'newPassword': {
-      if (!value) return ''
+    case 'password': {
+      if (!value) return 'Password is required'
       if (value.length < 8) return 'Password must be at least 8 characters'
       return ''
     }
     case 'confirmPassword': {
-      if (!values.newPassword && !value) return ''
-      if (!value) return 'Confirm your new password'
-      if (value !== values.newPassword) return 'Passwords do not match'
+      if (!value) return 'Please confirm your password'
+      if (value !== values.password) return 'Passwords do not match'
       return ''
     }
     default:
@@ -66,8 +60,7 @@ export function validateForm(values) {
     'email',
     'username',
     'bio',
-    'theme',
-    'newPassword',
+    'password',
     'confirmPassword',
   ]
 
